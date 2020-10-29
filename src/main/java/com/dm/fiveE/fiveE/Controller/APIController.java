@@ -22,19 +22,17 @@ import cn.hutool.http.HttpUtil;
 public class APIController {
 
 	@RequestMapping("/getAuth")
-	public Result getAuth(String acc, String pswd, String device_code, String token, Integer _type) {
+	public Result getAuth(String acc, String pswd, String device_code) {
 		if (StrUtil.isAllEmpty(device_code)) {
 			return ResultUtil.error(ResultEnum.DATA_IS_NULL.getCode(), ResultEnum.DATA_IS_NULL.getMsg());
 		}
 		try {
-			if (StrUtil.isBlank(token)) {
-				// 登陆5E获取Token
-				Map<String, Object> login_map = new HashMap<>();
-				login_map.put("account", acc);
-				login_map.put("password", pswd);
-				String login_result = HttpUtil.post("https://app.5eplay.com/api/user/login", login_map);
-				token = JSON.parseObject(login_result).getJSONObject("data").getString("user_token");
-			}
+			// 登陆5E获取Token
+			Map<String, Object> login_map = new HashMap<>();
+			login_map.put("account", acc);
+			login_map.put("password", pswd);
+			String login_result = HttpUtil.post("https://app.5eplay.com/api/user/login", login_map);
+			String token = JSON.parseObject(login_result).getJSONObject("data").getString("user_token");
 
 			String getGoogleAuth_result = HttpRequest
 					.get("https://app.5eplay.com/api/user/user_status_info?device_code=" + device_code)
