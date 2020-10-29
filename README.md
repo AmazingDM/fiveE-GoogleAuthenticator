@@ -25,12 +25,24 @@ result:
 
 
 如何从APP里提取设备码
+方法一：
 1.安装5e官方APP
 2.进行人脸认证且保证手机上可以看到登陆验证码
 3.覆盖安装 5E设备码提取.apk 注：如提示签名问题请卸载官方app后使用本项目提供的5E重签名版.apk，然后从第2步重新开始
 4.不出意外 5E设备码提取的APP界面上会显示设备码
+
+方法二（机器必须有ROOT权限）：
+打开/data/data/com.fiveplay/shared_prefs/spUtils.xml，xml中deviceCode就是设备码了
+
+
+（逆向时有看到生成设备码的逻辑，忘了在哪了，有空再补上）
+
 ```
 ![](Screenshot_com.fiveplay.jpg)
+
+设备提取码APP的整体源码就懒得发了5行代码解决问题
+
+![](doc2.png)
 
 ## Windows
 
