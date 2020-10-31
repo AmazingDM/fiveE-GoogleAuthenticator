@@ -1,4 +1,4 @@
-# 将5E平台优先登陆的验证码放到其他平台查看（谷歌验证器）#
+# 5E CSGO平台优先登录验证码提取 #
 
 懒得打开手机看验证码所以有了此项目:D
 
@@ -8,7 +8,7 @@
 ```
 mvn install
 
-java -jar 
+java -jar fiveE-0.0.1-SNAPSHOT.jar
 
 API: http://127.0.0.1:8080/getAuth?acc=5e账号（必填，用于刷新token）&pswd=5e密码（同上）&device_code=APP里提取设备码
 

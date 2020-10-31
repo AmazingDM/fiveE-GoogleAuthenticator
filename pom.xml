@@ -13,7 +13,7 @@
 	<artifactId>fiveE</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fiveE</name>
-	<description>Demo project for Spring Boot</description>
+	<description>https://github.com/AmazingDM/fiveE-GoogleAuthenticator</description>
 
 	<properties>
 		<java.version>1.8</java.version>
