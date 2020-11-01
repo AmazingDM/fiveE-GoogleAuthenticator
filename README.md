@@ -37,7 +37,7 @@ WEB: http://127.0.0.1:8080/index.html
 方法二（机器必须有ROOT权限）：
 打开/data/data/com.fiveplay/shared_prefs/spUtils.xml，xml中deviceCode就是设备码了
 
-
+注：设备码必须是已人脸认证的设备上提取的才有用。
 （逆向时有看到生成设备码的逻辑，忘了在哪了，有空再补上）
 
 ```
