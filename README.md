@@ -2,15 +2,17 @@
 
 懒得打开手机看验证码所以有了此项目:D
 
-演示站：xxx.com
+演示站：http://139.159.237.182:8080/index.html 感谢匿名网友提供
+
+WEB源码来自：https://github.com/ElementUI/element-starter
 
 # Usage
 ```
 mvn install
 
-java -jar fiveE-0.0.1-SNAPSHOT.jar
+java -jar fiveE-0.0.2-SNAPSHOT.jar
 
-API: http://127.0.0.1:8080/getAuth?acc=5e账号（必填，用于刷新token）&pswd=5e密码（同上）&device_code=APP里提取设备码
+API: http://127.0.0.1:8080/api/getAuth?acc=5e账号（必填，用于刷新token）&pswd=5e密码（同上）&device_code=APP里提取设备码
 
 result:
 
@@ -23,6 +25,7 @@ result:
     }
 }
 
+WEB: http://127.0.0.1:8080/index.html
 
 如何从APP里提取设备码
 方法一：
@@ -58,5 +61,5 @@ https://winauth.github.io/winauth/download.html
 
 TODO
 - [x] API 获取密钥及当前验证码
-- [ ] WEB界面
-- [ ] 演示站
+- [x] WEB界面
+- [x] 演示站

@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.dm.fiveE</groupId>
 	<artifactId>fiveE</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>fiveE</name>
 	<description>https://github.com/AmazingDM/fiveE-GoogleAuthenticator</description>
 
@@ -29,6 +29,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<!--lombok -->
 		<dependency>
