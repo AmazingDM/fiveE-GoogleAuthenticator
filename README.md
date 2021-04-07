@@ -2,7 +2,7 @@
 
 懒得打开手机看验证码所以有了此项目:D
 
-演示站：http://139.159.237.182:8080/index.html 感谢匿名网友提供
+演示站：~http://139.159.237.182:8080/index.html~ 感谢匿名网友提供
 
 WEB源码来自：https://github.com/ElementUI/element-starter
 
